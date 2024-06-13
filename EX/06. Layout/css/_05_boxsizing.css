@@ -1,0 +1,26 @@
+/*box-sizing 속성: width, height 속성의 적용범위를 설정하는 속성
+                   width, height 속성 값이 border까지 적용될 것인지
+                   컨텐츠 영역에만 정용할 것인지 설정한다.*/
+div{
+    margin: 10px;
+}
+.box1{
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 10px solid black;
+    /*100px이 padding과 border를 포함한 크기가 된다.
+    컨텐츠 영역의 크기는 60px X 60px이 된다.*/
+    box-sizing: border-box;
+}
+.box2{
+    background-color: orange;
+    background-clip: content-box;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 10px solid black;
+    /*기본값*/
+    box-sizing: content-box;
+}
