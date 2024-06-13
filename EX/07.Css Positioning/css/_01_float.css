@@ -23,6 +23,8 @@ div{
     float: right;
 }
 .box5{
+    /*float 태그에 영향받지 않도록 설정*/
+    clear: both;
     background-color: red;
     /*이 margin은 브라우저에서 200px 떨어진 위치에 위치하게됨*/
     margin-left: 210px;

@@ -1,0 +1,24 @@
+body{
+    perspective: 300px;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background: blue;
+    /*width 1초, height 2초, background 3초, transform 5초동안 지속되는 드랜지션 생성*/
+    transition-property: width, height, background-color, transform;
+    transition-duration: 1s, 2s, 3s, 5s;
+    /* transition-property: transform;
+    transform: scaleX(1) scaleY(2); */
+}
+
+/*div에 마우스 커러 올렸을 때 width: 200px, height: 150px, 
+background: red, transform:45도 회전*/
+div:hover{
+    width: 200px;
+    height: 150px;
+    background: red;
+    transform: rotate(45deg);
+}
