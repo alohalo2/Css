@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCB Cafe</title>
+    <!--적용할 스타일 시트-->
+    <link rel="stylesheet" href="css/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--적용할 글꼴-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
+    <!--파비콘 설정-->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <!--3. 메인영역 전체에 표시되는 배경이미지 지정-->
+    <div class="big-bg" id="home">
+        <!--1. 헤더 부분 작성-->
+        <!--containder vs wrapper 차이
+            container: 하나 이상의 요소를 포함하는 경우에 사용
+            wrapper: 하나의 요소를 포함하는 경우에 사용-->
+        <header class="page-header wrapper">
+             <!--1-1. 로고 부분 -->
+             <h1>
+                <!--
+                <a> 태그의 href 속성은 링크된 페이지의 URL을 명시합니다.
+                링크(link)의 URL
+
+                1. 절대 주소(absolute URL)
+                ex) href=“http://www.tcpschool.com/index.php”
+
+                2. 상대 주소(relative URL)
+                ex) href=“/lecture/logo.png”
+
+                3. 같은 페이지 내에서 명시된 id를 가지고 있는 요소를 연결함.
+                ex) href=“#bottom”
+
+                4. 스크립트
+                ex) href=“javascript:alert(‘반갑습니다!’)”
+
+                5. 백엔드나 정해지지 않은 url일 경우 
+                ex) href="#"
+                -->
+                <a href="index.html">
+                    <img class="logo" src="images/logo.svg" alt="WCB Cafe Logo">
+                </a>
+             </h1>
+             <!--1-2. 메뉴바 부분-->
+             <nav>
+                <ul class="main-nav">
+                    <!--a 태그는 링크로서의 기능이 있다.-->>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+             </nav>
+        </header>
+        <!--2. 메인페이지 컨텐츠 영역 작성-->
+        <div class="home-content wrapper">
+            <h2 class="page-title">We'll Make Your Day</h2>
+            <p>멋진 카페에서 힐링 시간을 가지세요. 첨가물을 넣지 않은 재료로 건강한 음식을 만듭니다.</p>
+            <a href="#" class="button">메뉴 보기</a>
+        </div>
+    </div>
+</body>
+</html>
