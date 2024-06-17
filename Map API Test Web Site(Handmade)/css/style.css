@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/*공통부분 작성*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "나눔고딕", NanumGothic, "맑은고딕", MalgunGothic, "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+/*해더 부분*/
+.big-bg{
+    max-width: 1800vh;
+    margin: auto;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+}
+.main-nav{
+    list-style: none;
+    display: flex;
+    margin-top: 36px;
+    font-size: larger;
+}
+.main-nav li{
+    margin-left: 36px;
+}
+
+.main-nav a{
+    color: white;
+}
+
+.main-nav a:hover {
+    color: rgb(247, 139, 6);
+}
+
+.main-text{
+    text-align: center;
+    margin-top: 20rem;
+}
+
+.white-text {
+    color: white;
+}
+h2{
+    font-size: 70px;
+}
+h4{
+    font-size: 30px;
+}
+
+.high-light{
+    color: rgb(247, 139, 6);
+}
+
+#home{
+    background-image:url(../images/header.jpg);
+    min-height: 150vh;
+    background-blend-mode: color-burn;
+}
+
+.small-text{
+    margin-bottom: 30px;
+    text-align: center;
+}

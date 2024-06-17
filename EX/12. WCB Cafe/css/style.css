@@ -52,7 +52,14 @@ img {
 
 /*1-2. 메뉴바 부분 작성*/
 .main-nav {
+    /*display: flex; => div로 나눠진 교차축(세로)에 위치한 것들을
+                        주축(가로)으로 위치하도록 해줌*/
     display: flex;
+    /*list-style: none; => 리스트의 마커를 삭제한다.
+    list-style-type: 리스트 마커의 종류를 설정할 수 있다.
+    list-style-position: 리스트 마커의 위치를 설정할 수 있다.
+    list-style-image: 사용자 지정 이미지를 마커로 설정할 수 있다.
+    */
     list-style: none;
     font-size: 1.25rem;
     text-transform: uppercase;
