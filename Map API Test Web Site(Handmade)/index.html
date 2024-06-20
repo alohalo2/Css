@@ -10,49 +10,46 @@
     <link rel="icon" href="images/logo.svg">
 </head>
 <body>
-    <div class="big-bg" id="home">
-        <header class="container">
-            <div class="logo">
-                <label for="logo">
-                    <img src="images/logo.svg" alt="logo">
-                </label>
-            </div>
-            <nav>
-                <ul class="main-nav">
-                    <li>
-                        <a href="About-us">About us</a>
-                    </li>
-                    <li>
-                        <a href="Map">Map</a>
-                    </li>
-                    <li>
-                        <a href="Concat">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div class="main-text white-text">
+    <header class="home-top">
+        <div class=".page-header container1">
+            <img src="images/logo.svg" alt="logo" class="logo">
+                <nav>
+                    <ul class="main-nav">
+                        <li>
+                            <a href="About-us">About us</a>
+                        </li>
+                        <li>
+                            <a href="Map">Map</a>
+                        </li>
+                        <li>
+                            <a href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+        <div class="main-text container2">
             <h4>This is test site</h4>
             <h2>Map API Test</h2>
         </div>
-    </div>
-    <div>
-        <div class="About-us" id="About-us">
+    </header>
+    <section class="middle-page">
+        <div class="About-us">
 
         </div>
-        <div class="Map" id="Map">
+        <div class="Map">
 
         </div>
-        <div class="Contact" id="Contact">
+        <div class="Contact">
 
         </div>
-    </div>
-    <footer class="footer big-bg" id="home">
-        <div class="white-text">
-            <div>
+    </section>
+    <footer class="home-bottom" id="contact">
+        <a name="Contact"></a>
+        <div>
+            <div class="footer-header">
                 <h4>Drop Us A Line</h4>
             </div>
-                <ul>
+                <ul class="flex-box1">
                     <li>Phone</li>
                     <p>+ 123-456-7890</p>
                     <li>Address</li>
@@ -62,7 +59,7 @@
                 </ul>
         </div>
         <div>
-            <form action="">
+            <form action="" class="flex-box2">
                 <ul>
                     <li><br>
                         <input type="text" name="name">
@@ -83,8 +80,8 @@
             </form>
         </div>
         <div>
-            <p class="small-text">
-                <small class="white-text">&copy; 2024,Map API Test Created by <span class="high-light">Jusung Lee.</span></small>
+            <p>
+                <small class="small-text">&copy; 2024,Map API Test Created by <span class="high-light">Jusung Lee.</span></small>
             </p>
         </div>
     </footer>

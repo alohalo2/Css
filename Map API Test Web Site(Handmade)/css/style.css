@@ -8,6 +8,7 @@ html {
 body {
     font-family: "나눔고딕", NanumGothic, "맑은고딕", MalgunGothic, "Apple SD Gothic Neo", sans-serif;
     line-height: 1.7;
+    height: 200vh;
 }
 
 a {
@@ -19,20 +20,24 @@ img {
 }
 
 /*해더 부분*/
-.big-bg{
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.container{
+.page-header{
     display: flex;
     justify-content: space-between;
-    margin-left: 15%;
-    margin-right: 15%; 
-    max-width: 1800vh;
 }
+
+.container1{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    max-width: 1800px;
+    border: 1px solid white;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
 .logo{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     margin-top: 20px;
 }
 .main-nav{
@@ -53,33 +58,97 @@ img {
     color: rgb(247, 139, 6);
 }
 
-.main-text{
-    text-align: center;
-    margin-top: 20rem;
+.container2 {
+    height: 900px;
+    border: 1px solid white;
+    position: relative;
 }
 
-.white-text {
+.main-text{
     color: white;
+    text-align: center;
 }
+
+.main-text h4{
+    line-height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+}
+
+.main-text h2{
+    margin-top: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 h2{
     font-size: 70px;
 }
 h4{
     font-size: 30px;
 }
+/*middle 부분*/
+.middle-page {
+    background-color: white;
+    height: 2000px;
+}
+
+/*footer 부분*/
+
+.footer-header {
+    text-align: center;
+    color: white;
+}
+
+input {
+    background: white;
+    border: 1px solid black;
+}
+
+textarea {
+    background: white;
+}
+
+.flex-box1 {
+    color: white;
+    display: flex;
+    grid-template-rows: 1fr;
+}
+.flex-box2 {
+    color: white;
+    display: flex;
+    grid-template-rows: 1fr;
+}
+
+.small-text {
+    text-align: center;
+    color: white;
+}
 
 .high-light{
     color: rgb(247, 139, 6);
 }
+button{
+    color: white;
+}
 
-#home{
+.home-top{
     background-image:url(../images/header.jpg), linear-gradient(gray, gray);
-    min-height: 150vh;
-    
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-blend-mode: multiply;
 }
 
-.small-text{
-    margin-bottom: 30px;
-    text-align: center;
+.home-bottom{
+    background-image:url(../images/header.jpg), linear-gradient(gray, gray);
+    min-height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
 }
