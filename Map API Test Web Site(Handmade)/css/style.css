@@ -117,12 +117,11 @@ textarea {
 .flex-box1 {
     color: white;
     display: flex;
-    grid-template-rows: 1fr;
+    flex-direction: column;
 }
 .flex-box2 {
     color: white;
     display: flex;
-    grid-template-rows: 1fr;
 }
 
 .small-text {
