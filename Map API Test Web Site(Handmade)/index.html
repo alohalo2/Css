@@ -9,19 +9,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     <link rel="icon" href="images/logo.svg">
 </head>
-<body>     
+<body class="bodice">     
     <header class="home-top">
-        <div class="page-header">
-            <label>
-                <img src="images/logo.svg" alt="logo" class="logo">
-            </label>
-            <nav>
-                <ul class="main-nav">
-                    <li><a href="About-us">About us</a></li>
-                    <li><a href="Map">Map</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="container">
+            <div class="page-header">
+                <label>
+                    <img src="images/logo.svg" alt="logo" class="logo">
+                </label>
+                <nav>
+                    <ul class="main-nav">
+                        <li><a href="About-us">About Us</a></li>
+                        <li><a href="Map">Map</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div class="home_top_mainText">
             <h4>This is test site</h4>
@@ -29,23 +31,21 @@
         </div>
     </header>
     <section class="middle-page">
-        <div class="About-us">
+        <div class="container">
+            <div class="border_text">About Us</div>
 
         </div>
-        <div class="Map">
+        <div class="container">
 
         </div>
-        <div class="Contact">
+        <div class="container">
 
         </div>
     </section>
     <footer class="home-bottom" id="contact">
         <a name="Contact"></a>
-        <div>
-            <div class="footer-header">
-                <h4>Drop Us A Line</h4>
-            </div>
-            <div>
+        <div class="container">
+            <div class="footer_flexbox">
                 <ul class="flex-box1">
                     <li>Phone</li>
                     <p>+ 123-456-7890</p>
@@ -54,34 +54,50 @@
                     <li>Email</li>
                     <p>info@website.com</p>
                 </ul>
+                <div class="flex-box2">
+                    <div class="footer-header">
+                        <h4>Drop Us A Line</h4>
+                    </div>
+                    <form>
+                        <div class="flex_flex-box2">
+                            <div class="form_group flx1">
+                                <input class="form_control border_bottom" type="text" name="name" id="name" placeholder="Name">
+                            </div>
+                            <div class="form_group flx1">
+                                <input class="form_control border_bottom" type="email" name="email" id="email" placeholder="Email">
+                            </div>
+                            <div class="form_group flx1">
+                                <input class="form_control border_bottom" type="text" name="subject" id="subject" placeholder="Subject">
+                            </div>
+                            <div class="form_group flx2">
+                                <textarea class="form_control border_bottom" name="message" cols="80" rows="3" id="message" placeholder="Message"></textarea>
+                            </div>
+                            <div>
+                                <button class="flx2" type="button">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <p class="border_top">
+                    <small class="small-text">&copy; 2024,Map API Test Created by <span class="high-light">Jusung Lee.</span></small>
+                </p>
             </div>
         </div>
-        <div>
-            <form action="" class="flex-box2">
-                <ul>
-                    <li><br> 
-                        <input type="text" name="name">
-                    </li>
-                    <li>
-                        <input type="email" name="email">
-                    </li>
-                    <li>
-                        <input type="text" name="subject">    
-                    </li>
-                    <li>
-                        <textarea name="message" cols="60" rows="3"></textarea>
-                    </li>
-                </ul>
-                <div>
-                    <button type="button">Send</button>
-                </div>
-            </form>
-        </div>
-        <div>
-            <p>
-                <small class="small-text">&copy; 2024,Map API Test Created by <span class="high-light">Jusung Lee.</span></small>
-            </p>
-        </div>
     </footer>
+    <script>
+        function clickChangeColor () {
+            let changeNameBorderColor = document.getElementById("name");
+            let changeEmailBorderColor = document.getElementById("email");
+            let changeSubjectBorderColor = document.getElementById("subject");
+            let changeMessageBorderColor = document.getElementById("message");
+
+            changeNameBorderColor.addEventListener("click", () => {
+
+            })
+
+        }
+    </script>
 </body>
 </html>
