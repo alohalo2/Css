@@ -14,11 +14,13 @@
         <div class="container">
             <div class="page-header">
                 <label>
-                    <img src="images/logo.svg" alt="logo" class="logo">
+                    <a href="#Logo">
+                        <img src="images/logo.svg" alt="logo" class="logo" name="Logo">
+                    </a>
                 </label>
                 <nav>
                     <ul class="main-nav">
-                        <li><a href="About-us">About Us</a></li>
+                        <li><a href="#Our-Service">Our Service</a></li>
                         <li><a href="Map">Map</a></li>
                         <li><a href="#Contact">Contact</a></li>
                     </ul>
@@ -29,22 +31,51 @@
             <h4>This is test site</h4>
             <h2>Map API Test</h2>
         </div>
+        <div>
+            <svg class="header_bottom" viewbox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"></path>
+            </svg>
+        </div>
     </header>
     <section class="middle-page">
         <div class="container">
-            <div class="border_text">About Us</div>
+            <a name="Our-Service"></a>
+            <div class="middle_text1">
+                <h2>Our Service</h2>
+            </div>
+            <div class="OS_flex">
+                <div class="OS_box1">
+                    <h4>01</h4>
+                    <h3>Map</h3>
+                    <p>우리는 카카오톡 지도 API를 통해서 지도로 사용자가 원하는 정보를 제공하고 있습니다.</p>
+                </div>
+                <div class="OS_box2">
+                    <h4>02</h4>
+                    <h3>Searching<br>Engine</h3>
+                    <p>우리는 카카오톡 검색 API를 통해서 검색 바에 입력된 사용자가 원하는 정보를 제공하고 있습니다.</p>
+                </div>
+                <div class="OS_box3">
+                    <h4>03</h4>
+                    <h3>Location</h3>
+                    <p>우리는 카카오톡 위치 API를 통해서 검색 바에 입력된 사용자가 원하는 정보를 지도로 제공하고 있습니다.</p>
+                </div>
+            </div>
 
         </div>
         <div class="container">
-
+            <a name=""></a>
+            <div class="">
+                <img src="images/2.gif" alt="">
+            </div>
         </div>
         <div class="container">
+            <a name=""></a>
 
         </div>
     </section>
-    <footer class="home-bottom" id="contact">
-        <a name="Contact"></a>
+    <footer class="home-bottom">
         <div class="container">
+            <a name="Contact"></a>
             <div class="footer_flexbox">
                 <ul class="flex-box1">
                     <li>Phone</li>
@@ -87,17 +118,25 @@
         </div>
     </footer>
     <script>
-        function clickChangeColor () {
-            let changeNameBorderColor = document.getElementById("name");
-            let changeEmailBorderColor = document.getElementById("email");
-            let changeSubjectBorderColor = document.getElementById("subject");
-            let changeMessageBorderColor = document.getElementById("message");
+        document.addEventListener('DOMContentLoaded', function() {
 
-            changeNameBorderColor.addEventListener("click", () => {
+            const elements = ['name', 'email', 'subject', 'message'];
 
-            })
+            elements.forEach(id => {
+                const element = document.getElementById(id);
 
-        }
+                element.addEventListener("click", () => {
+                    element.classList.add("clicked");
+                });
+
+                element.addEventListener("blur", () => {
+                    element.classList.remove("clicked");
+                });
+
+            });
+
+        });
+
     </script>
 </body>
 </html>
